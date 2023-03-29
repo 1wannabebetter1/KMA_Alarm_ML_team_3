@@ -5,7 +5,7 @@ import json
 import requests
 from flask import Flask, jsonify, request
 
-API_TOKEN = "PYA33Q3TCHELR7AHKHJEFKG77"
+API_TOKEN = ""
 
 app = Flask(__name__)
 
