@@ -41,4 +41,3 @@ def separate():
 # print(y_train)
 # print(x_test)
 # print(y_test)
-
