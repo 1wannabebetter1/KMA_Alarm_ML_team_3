@@ -4,9 +4,8 @@ import pandas as pd
 
 def separate():
 
-    # df = pd.read_csv('data/all_info_with_tfidf/all_info_with_tfidf.csv', sep=';')
-    # df = pd.read_csv('data/all_info_with_tfidf/all_info_with_tfidf.csv', sep=';', nrows=1000)
-    df = pd.read_csv('data/merged_dataset/all_info_with_tfidf.csv', sep=';')
+    # df = pd.read_csv('data/merged_dataset/all_info_with_tfidf.csv', sep=';')
+    df = pd.read_csv('data/merged_dataset/all_info_with_tfidf.csv', sep=';', nrows=20000)
 
     dates = pd.to_datetime(df['hour_datetimeEpoch'], unit='s')
 
