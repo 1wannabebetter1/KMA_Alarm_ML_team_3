@@ -7,12 +7,9 @@ alarms_df = pd.read_csv("data/events/alarms.csv", delimiter=";")
 
 # визначаємо місяці для кожного запису в таблиці alarms
 alarms_df["month"] = pd.to_datetime(alarms_df["start"]).dt.month
-# також для 2 місяця
-alarms_df_2 = alarms_df[alarms_df["month"] == 2]
 
 # знаходимо місяць з найбільшою кількістю тривог
-#most_alarms_month = alarms_df["month"].value_counts().idxmax()
-most_alarms_month = alarms_df_2["month"].value_counts().idxmax()
+most_alarms_month = alarms_df["month"].value_counts().idxmax()
 
 # виводимо місяць з найбільшою кількістю тривог
 print(f"Місяць з найбільшою кількістю тривог: {most_alarms_month}")
@@ -43,5 +40,5 @@ word_counts = pd.Series(words_list).value_counts()
 # створюємо кругову діаграму найчастіше вживаного слова
 plt.figure(figsize=(15,10))
 plt.pie(word_counts[:10], labels=word_counts[:10].index, autopct='%1.1f%%')
-plt.title(f"Найчастіше вживане слово у місяці {most_alarms_month}")
+plt.title(f"Найчастіше вживані слова у місяці {most_alarms_month}")
 plt.show()
