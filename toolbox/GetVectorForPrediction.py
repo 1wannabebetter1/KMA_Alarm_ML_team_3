@@ -12,8 +12,8 @@ tfidf_transformer_model = "tfidf_transformer"
 count_vectorizer_model = "count_vectorizer"
 tfidf_transformer_version = "v1"
 count_vectorizer_version = "v1"
-vector_folder = 'exp/vector/'
-html_folder = 'exp/html/'
+vector_folder = 'predictioninfo/vector/'
+html_folder = 'predictioninfo/html/'
 
 def GetVector(date):
     if(os.path.isfile(vector_folder+date+'.csv')):
