@@ -9,6 +9,8 @@ def savePageCustom(date: str, customLink: str, path: str):
   r = requests.get(url)
   if (r.text.find("We're Sorry. The page you're looking for wasn't found.") != -1):
     print(date + " no such link")
+  elif(r.text.find("You are not authorized to access this page.") != -1):
+    print(date + " no such link")
   else:
     name = path+date+".html"
     with open(name, "w") as output_file:
