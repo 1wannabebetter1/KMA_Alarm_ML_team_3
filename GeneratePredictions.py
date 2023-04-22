@@ -12,8 +12,6 @@ REGION_FILE = "regions.csv"
 MODEL_FOLDER = "data/model/"
 MODEL_FILE = "modelSGD_scaled.pkl"
 
-#REGION_FOLDER = "/Users/anastasia/Desktop/programming python/data/regions/"
-#MODEL_FOLDER = "/Users/anastasia/Desktop/programming python/data/model/"
 
 def generateAllRegionPredictions():
     df_regions = pd.read_csv(REGION_FOLDER+REGION_FILE)
