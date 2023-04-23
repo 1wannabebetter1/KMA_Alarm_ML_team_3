@@ -209,6 +209,108 @@
 				}
 			},
 			"response": []
+		},
+		{
+			"name": "Kyiv",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{  \n    \"location\": \"Kyiv\" \n}"
+				},
+				"url": {
+					"raw": "http://3.126.208.60:8000/forecast/api/v1",
+					"protocol": "http",
+					"host": [
+						"3",
+						"126",
+						"208",
+						"60"
+					],
+					"port": "8000",
+					"path": [
+						"forecast",
+						"api",
+						"v1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Zaporozhye",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{  \n    \"location\": \"Zaporozhye\" \n}"
+				},
+				"url": {
+					"raw": "http://3.126.208.60:8000/forecast/api/v1",
+					"protocol": "http",
+					"host": [
+						"3",
+						"126",
+						"208",
+						"60"
+					],
+					"port": "8000",
+					"path": [
+						"forecast",
+						"api",
+						"v1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Zhytomyr",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{  \n    \"location\": \"Zhytomyr\" \n}"
+				},
+				"url": {
+					"raw": "http://3.126.208.60:8000/forecast/api/v1",
+					"protocol": "http",
+					"host": [
+						"3",
+						"126",
+						"208",
+						"60"
+					],
+					"port": "8000",
+					"path": [
+						"forecast",
+						"api",
+						"v1"
+					]
+				}
+			},
+			"response": []
 		}
 	]
 }
