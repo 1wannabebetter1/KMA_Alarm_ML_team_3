@@ -42,11 +42,11 @@ def generateRegionPredict(city, region_id, time):
     merge = hours12.merge(vectorDF, left_on='day_datetime', right_on='date')
     merge = merge.drop(['day_datetime', 'date'], axis=1)
     merge = merge.fillna(0)
+    merge.columns = merge.columns.astype(str)
     Epoch = merge['hour_datetimeEpoch']
     scaler = pickle.load(open(f"{MODEL_FOLDER}/scaler.pkl", "rb"))
     merge = pd.DataFrame(scaler.transform(merge), columns=merge.columns)
     model = pickle.load(open(MODEL_FOLDER+MODEL_FILE, "rb"))
-    merge.columns = merge.columns.astype(str)
     res = model.predict(merge)
     time = pd.DataFrame({'Time': Epoch, 'alarm': res})
     time['date'] = pd.to_datetime(time['Time'], unit='s')
