@@ -1,0 +1,214 @@
+{
+	"info": {
+		"_postman_id": "ec2c5faf-74ea-4847-8323-9688aad02fb1",
+		"name": "alarm",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "25755834"
+	},
+	"item": [
+		{
+			"name": "all",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{  \n    \"location\": \"all\" \n}"
+				},
+				"url": {
+					"raw": "http://3.126.208.60:8000/forecast/api/v1",
+					"protocol": "http",
+					"host": [
+						"3",
+						"126",
+						"208",
+						"60"
+					],
+					"port": "8000",
+					"path": [
+						"forecast",
+						"api",
+						"v1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Odesa",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{  \n    \"location\": \"Odesa\" \n}"
+				},
+				"url": {
+					"raw": "http://3.126.208.60:8000/forecast/api/v1",
+					"protocol": "http",
+					"host": [
+						"3",
+						"126",
+						"208",
+						"60"
+					],
+					"port": "8000",
+					"path": [
+						"forecast",
+						"api",
+						"v1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Kharkiv",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{  \n    \"location\": \"Kharkiv\" \n}"
+				},
+				"url": {
+					"raw": "http://3.126.208.60:8000/forecast/api/v1",
+					"protocol": "http",
+					"host": [
+						"3",
+						"126",
+						"208",
+						"60"
+					],
+					"port": "8000",
+					"path": [
+						"forecast",
+						"api",
+						"v1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Sumy",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{  \n    \"location\": \"Sumy\" \n}"
+				},
+				"url": {
+					"raw": "http://3.126.208.60:8000/forecast/api/v1",
+					"protocol": "http",
+					"host": [
+						"3",
+						"126",
+						"208",
+						"60"
+					],
+					"port": "8000",
+					"path": [
+						"forecast",
+						"api",
+						"v1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Kropyvnytskyi",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{  \n    \"location\": \"Kropyvnytskyi\" \n}"
+				},
+				"url": {
+					"raw": "http://3.126.208.60:8000/forecast/api/v1",
+					"protocol": "http",
+					"host": [
+						"3",
+						"126",
+						"208",
+						"60"
+					],
+					"port": "8000",
+					"path": [
+						"forecast",
+						"api",
+						"v1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Ivano-Frankivsk",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{  \n    \"location\": \"Ivano-Frankivsk\" \n}"
+				},
+				"url": {
+					"raw": "http://3.126.208.60:8000/forecast/api/v1",
+					"protocol": "http",
+					"host": [
+						"3",
+						"126",
+						"208",
+						"60"
+					],
+					"port": "8000",
+					"path": [
+						"forecast",
+						"api",
+						"v1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
