@@ -4,7 +4,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 
 #read csv
-df = pd.read_csv('/Users/anastasia/Desktop/programming python/data/merged_dataset/new_features_copy.csv', sep=';')
+df = pd.read_csv('../data/merged_dataset/new_features.csv', sep=';')
 
 # correlation with datetime and alerts_last_24h
 x = 'day_datetime'

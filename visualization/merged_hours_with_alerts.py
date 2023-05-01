@@ -5,7 +5,7 @@ import matplotlib.pyplot as plt
 from matplotlib import cm
 
 # read csv 
-df = pd.read_csv('/Users/anastasia/Desktop/programming python/data/merged_dataset/new_features_copy.csv', sep=';')
+df = pd.read_csv('../data/merged_dataset/new_features.csv', sep=';')
 
 # remove duplicate rows
 df = df.drop_duplicates(subset=['region_id', 'isAlarm', 'day_datetime'])

@@ -4,7 +4,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 
 #read csv
-df = pd.read_csv('/Users/anastasia/Desktop/programming python/data/weather/all_weather_by_hour.csv')
+df = pd.read_csv('../data/weather/all_weather_by_hour.csv')
 
 # correlation with datetime and dew in a day
 x = 'day_datetimeEpoch'

@@ -3,7 +3,7 @@
 import pandas as pd
 import matplotlib.pyplot as plt
 
-df = pd.read_csv('/Users/anastasia/Desktop/programming python/data/weather/all_weather_by_hour.csv')
+df = pd.read_csv('../data/weather/all_weather_by_hour.csv')
 
 # correlation between wind speed and time
 
