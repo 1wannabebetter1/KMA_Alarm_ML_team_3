@@ -37,7 +37,8 @@ def generateAllRegionPredictions():
         f = open("predictioninfo/lastHour.txt", "w")
         f.write(str(time))
         f.close()
-        # Create or re-create a document in which we record the time of the last forecast generation completion        f2 = open("predictioninfo/lastUpdate.txt", "w")
+        # Create or re-create a document in which we record the time of the last forecast generation completion
+        f2 = open("predictioninfo/lastUpdate.txt", "w")
         f2.write(datetime.datetime.now().strftime("%m/%d/%Y, %H:%M:%S"))
         f2.close()
 
