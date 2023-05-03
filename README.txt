@@ -46,17 +46,17 @@ contact e-mail of team leader: vladyslav.vitisk@ukma.edu.ua
 *   All vectors and ISW dataset is already prepared for future usage.
 *   But to rerun all code you have to run prepareBaseDate() method from scrapper.py
 *   in main folder that will download all available reports from 24-02-22 to 25-01-23.
-*   Then you should run all cells from CreateDataSetOfISW.ipynb, preprocessing_1.ipynb,
-*   preprocessing_2.ipynb.
+*   Then you should run all cells from 1__CreateDataSetOfISW.ipynb, 2__preprocessing_1.ipynb,
+*   3__Preprocessing_2.ipynb.
 *
 *   NEXT CODE IS REQUIRED FOR FURTHER WORK
 *
-*   To merge datasets run all cells of code from 3_prepare_final_dataset.ipynb
+*   To merge datasets run all cells of code from 4__prepare_final_dataset.ipynb
 *
-*   Then run CreateNewFeatures.ipynb(it's required for visualization and further generated features
+*   Then run 5__CreateNewFeatures.ipynb(it's required for visualization and further generated features
 *   will be removed in next file, because of problems further modeling and prediction)
 *
-*   To create models run trainingModel.ipynb
+*   To create models run 6__trainingModel.ipynb
 * POSSIBLE PROBLEMS:
 *   Merging and training require big amount of Memory, so be sure that you have enough.
 *   Also we don't recommend to run "Tuning the hyper-parameters" section, because it requires even more memory
