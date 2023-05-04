@@ -15,16 +15,24 @@ count_vectorizer_version = "v1"
 vector_folder = 'predictioninfo/vector/'
 html_folder = 'predictioninfo/html/'
 
+# return last available report
 def GetVector(date):
+    # if vector already generated load prepared vector
+    # else trying to generate one, if page not exist
+    # moving date one day earlier using recursive call
     if(os.path.isfile(vector_folder+date+'.csv')):
         readyVector = pd.read_csv(vector_folder+date+'.csv', sep=";")
         return readyVector
     else:
         return TryGenerateVector(date);
+
+# generating vector if it's possible clearing data, vectorizing and saving result as .csv
 def TryGenerateVector(date):
     scr.savePage(date, html_folder)
     previousDate = datetime.datetime.strptime(date, '%Y-%m-%d') - datetime.timedelta(days=1)
     fileName = html_folder + date + '.html'
+    # if page not exist
+    # moving date one day earlier using recursive call
     if(os.path.isfile(fileName)==False):
         return GetVector(previousDate.strftime('%Y-%m-%d'))
     df = generateBaseDF(date)
@@ -33,6 +41,7 @@ def TryGenerateVector(date):
     tfidf_df.to_csv(vector_folder+date+'.csv', sep=";", index=False)
     return tfidf_df
 
+# generating basic DataFrame with date and text of report
 def generateBaseDF(date):
     html_name = html_folder + date + '.html'
     text = ""
@@ -50,6 +59,8 @@ def generateBaseDF(date):
         }
         all_isw.append(d)
     return pd.DataFrame.from_dict(all_isw)
+
+# transform received text to vector
 def transformToVector(df):
     tfidf = pickle.load(open(f"{MODEL_FOLDER}/{tfidf_transformer_model}_{tfidf_transformer_version}.pkl", "rb"))
     cv = pickle.load(open(f"{MODEL_FOLDER}/{count_vectorizer_model}_{count_vectorizer_version}.pkl", "rb"))
