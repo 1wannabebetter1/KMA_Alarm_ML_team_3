@@ -44,10 +44,10 @@ contact e-mail of team leader: vladyslav.vitisk@ukma.edu.ua
 * PREPARING MODEL:
 *
 *   All vectors and ISW dataset is already prepared for future usage.
-*   But to rerun all code you have to run prepareBaseDate() method from scrapper.py
-*   in main folder that will download all available reports from 24-02-22 to 25-01-23.
-*   Then you should run all cells from 1__CreateDataSetOfISW.ipynb, 2__preprocessing_1.ipynb,
-*   3__Preprocessing_2.ipynb.
+*   But to rerun all code you have to run
+*   all cells from 1__CreateDataSetOfISW.ipynb, 2__preprocessing_1.ipynb,
+*   3__Preprocessing_2.ipynb, that will download all reports, prepare dataset
+*   clear data, lemmatize and vertorize all reports
 *
 *   NEXT CODE IS REQUIRED FOR FURTHER WORK
 *
