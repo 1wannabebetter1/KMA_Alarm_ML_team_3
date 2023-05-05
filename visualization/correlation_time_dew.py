@@ -3,10 +3,10 @@
 import pandas as pd
 import matplotlib.pyplot as plt
 
-#read csv
+#reads csv
 df = pd.read_csv('../data/weather/all_weather_by_hour.csv')
 
-# correlation with datetime and dew in a day
+# correlation with datetime Epoch and dew in a day
 x = 'day_datetimeEpoch'
 y = 'day_dew'
 plot = df.plot(kind='scatter', x=x, y=y)
