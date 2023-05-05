@@ -9,8 +9,11 @@ df = pd.read_csv('../data/weather/all_weather_by_hour.csv')
 
 x = 'day_datetimeEpoch'
 y = 'day_windspeed'
+
+# draws plot
 plot = df.plot(kind='scatter', x=x, y=y)
 
+# names
 plot.set_xlabel("Datetime Epoch")
 plot.set_ylabel("Wind speed")
 plot.set_title("Correlation between wind speed and time")
