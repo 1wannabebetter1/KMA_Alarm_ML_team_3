@@ -11,6 +11,7 @@ x = 'day_datetimeEpoch'
 y = 'day_dew'
 plot = df.plot(kind='scatter', x=x, y=y)
 
+# names
 plot.set_xlabel("Datetime Epoch")
 plot.set_ylabel("Dew")
 plot.set_title("Correlation between dew in a day and date")
