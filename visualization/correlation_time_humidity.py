@@ -10,6 +10,7 @@ x = 'day_datetimeEpoch'
 y = 'day_humidity'
 plot = df.plot(kind='scatter', x=x, y=y)
 
+# names
 plot.set_xlabel("Datetime Epoch")
 plot.set_ylabel("Humidity")
 plot.set_title("Correlation between humidity and time")
