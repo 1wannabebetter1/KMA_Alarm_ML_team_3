@@ -20,7 +20,7 @@ def remove_names_and_date(page_html_text):
     else:
         return page_html_text[page_html_text.find('ET\xa0')+len("ET\xa0"):]
 
-## removes links, years, new paragraph, non-breaking space from the input text 
+## removes regular expressions like [1], links, years, new paragraph, non-breaking space from the input text 
 def removeGarbage(text):
     pattern = "\[\d+\]"
     res = re.sub(pattern, "", text)
